@@ -11,12 +11,14 @@ import { mapGetters, mapActions } from 'vuex'
 
 import Swiper from '@/components/Swiper'
 import SearchBar from '../components/SearchBar'
+import CardList from '../components/CardList'
 
 export default {
   name: 'Home',
   components: {
     Swiper,
-    SearchBar
+    SearchBar,
+    CardList
   },
   data() {
     return {

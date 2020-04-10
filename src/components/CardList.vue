@@ -1,7 +1,10 @@
 <template>
   <main>
     <template v-for="v in list">
-      <Card :key="v.name" :item="v"></Card>
+      <Card
+        :key="v.name"
+        :item="v"
+      ></Card>
     </template>
   </main>
 </template>
