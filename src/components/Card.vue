@@ -1,6 +1,6 @@
 <template>
   <router-link :to="{ name: 'products', params: {id: item.id}}" class="item">
-    <div :style="'background-image': `url(${this.item.image})`" class="image"></div>
+    <div :style="{'background-image':`url(${this.item.image})`}" class="image"></div>
     <div class="content">
       <label class="label">{{item.name}}</label>
       <div class="location">{{item.city}}</div>
