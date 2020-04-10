@@ -1,5 +1,5 @@
 # Buggy Program
-
+demo
 > 這是一個有 Bug 的專案，期望能藉此衡量你的 Debug 的能力、commit 習慣，以及了解你偏好的團隊合作方式。
 
 ## 面試規則
