@@ -1,27 +1,39 @@
 <template>
-  <router-link :to="{ name: 'products', params: {id: item.id}}" class="item">
-    <div :style="'background-image': `url(${this.item.image})`" class="image"></div>
+  <router-link
+    :to="{ name: 'products', params: {id: item.id}}"
+    class="item"
+  >
+    <div
+      :style="{'background-image': `url(${item.image})`}"
+      class="image"
+    ></div>
     <div class="content">
       <label class="label">{{item.name}}</label>
       <div class="location">{{item.city}}</div>
-      <div class="sold" v-if="item.view > 0 || item.sold > 0">
+      <div
+        class="sold"
+        v-if="item.view > 0 || item.sold > 0"
+      >
         <template v-if="item.view > 0">
           <span>
-            <span>🔥 </span>
+            <span>🔥</span>
             <span class="text">{{item.view > 9999 ? '9999 ⬆️' : item.view}}</span>
           </span>
         </template>
         <template v-if="item.sold > 0">
           <span class="border-left"></span>
           <span>
-            <span>售出 </span>
+            <span>售出</span>
             <span class="text">{{item.sold}}</span>
           </span>
         </template>
       </div>
       <div class="price">
-        <span>💲 </span>
-        <span>{{item.price}} <small>{{item.currency}}</small></span>
+        <span>💲</span>
+        <span>
+          {{item.price}}
+          <small>{{item.currency}}</small>
+        </span>
       </div>
     </div>
   </router-link>
